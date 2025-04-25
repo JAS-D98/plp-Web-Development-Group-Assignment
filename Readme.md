@@ -9,6 +9,7 @@ Welcome to our group assignment repository for the **Web Development Project**. 
 - Bednah Nzimbi  
 - Jasper Wambugu  
 - Eugene Ojakaa  
+- Mercy	Muturi 
 
 > 📌 *One assignment submission per group.*
 
@@ -92,8 +93,8 @@ To work efficiently and encourage collaboration, we distributed sections of the 
 | **My Biography Section**    | Eugene Ojakaa        | 
 | **What I Do For You Section** | Jasper Wambugu     |  
 | **My Featured Skills Section** | Eugene Ojakaa     |
-| **My Success Work Section** | Jasper Wambugu       | 
-| **Footer Section**          | Bednah Nzimbi      | 
+| **My Success Work Section** | Mercy	Muturi       | 
+| **Footer Section**          | Mercy	Muturi      | 
 
 ### 👨‍💻 Additional Roles
 
