@@ -1,48 +1,140 @@
-/* Reset some default browser styling */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Root Variables for Easy Customization */
-:root {
-    --primary-teal-color: #05806a;  /* Teal */
-    --primary-white-color: #fff;
-    --primary-grey-color: #4f4e52;
-    --primary-dark-grey-color: #2c3e50;
-    --font-family: 'Arial', sans-serif;
-    --font-size-base: 16px;
-    --font-size-large: 24px;
-    --font-size-small: 14px;
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header (Hero Section) */
+/* Biography Section */
+.biography {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* My Biography Section */
+/* Main container */
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+/* Left side - Image */
+.bio-image {
+    width: 50%; /* Default to 50% on larger screens */
+    height: auto;
+}
 
-/* What I Do For You Section */
+.bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-/* Featured Skills Section */
+/* Right side - Content */
+.bio-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 300px;
+}
 
-/* Success Work Section */
+/* Text styling */
+.bio-content h2 {
+    font-size: 16px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
 
+.bio-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #111;
+}
 
-/* Footer Section */
+.bio-content p {
+    margin-bottom: 15px;
+}
 
+/* Personal Details */
+.bio-details p {
+    margin: 5px 0;
+}
 
-/* ===================Media Queries for Responsiveness===================== */
+/* Social Media Icons */
+.bio-socials {
+    margin: 20px 0;
+}
 
-/* Header (Hero Section) */
+.bio-socials span {
+    margin-right: 10px;
+    font-weight: bold;
+}
 
-/* My Biography Section */
+.bio-socials a {
+    margin-right: 10px;
+    display: inline-block;
+}
 
-/* What I Do For You Section */
+.bio-socials img {
+    width: 24px;
+    height: 24px;
+}
 
-/* Featured Skills Section */
+/* Buttons */
+.bio-buttons {
+    margin-top: 20px;
+}
 
-/* Success Work Section */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
 
+.hire-me {
+    background-color: #0d3102;
+    color: white;
+}
 
-/* Footer Section */
+.hire-me:hover {
+    background-color: #43ec10;
+}
+
+.download-cv {
+    background-color: #12f00afd;
+    color: white;
+}
+
+.download-cv:hover {
+    background-color: #38a83d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .bio-image {
+        width: 100%; 
+    }
+}
