@@ -122,21 +122,13 @@ body {
 }
 
 .hire-me {
-    background-color: #0d3102;
+    background-color: var(--primary-teal-color) ;
     color: white;
-}
-
-.hire-me:hover {
-    background-color: #43ec10;
 }
 
 .download-cv {
-    background-color: #12f00afd;
+    background-color: mediumseagreen;
     color: white;
-}
-
-.download-cv:hover {
-    background-color: #38a83d;
 }
 
 /* Responsive Design */
