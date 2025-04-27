@@ -161,7 +161,7 @@ body {
 
 .card span {
   font-size: 3rem;
-  color: #4a90e2;
+  color: var(--primary-teal-color);
   margin-bottom: 1rem;
   display: inline-block;
 }
