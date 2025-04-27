@@ -1,10 +1,3 @@
-/* Reset some default browser styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Root Variables for Easy Customization */
 :root {
     --primary-teal-color: #05806a;  /* Teal */
@@ -16,16 +9,288 @@
     --font-size-large: 24px;
     --font-size-small: 14px;
 }
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Header (Hero Section) */
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
 
-/* My Biography Section */
+/* Biography Section */
+.biography {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* What I Do For You Section */
+/* Main container */
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+/* Left side - Image */
+.bio-image {
+    width: 50%; /* Default to 50% on larger screens */
+    height: auto;
+}
+
+.bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right side - Content */
+.bio-content {
+    flex: 1;
+    padding: 30px;
+    min-width: 300px;
+}
+
+/* Text styling */
+.bio-content h2 {
+    font-size: 16px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.bio-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.bio-content p {
+    margin-bottom: 15px;
+}
+/* Personal Details */
+.bio-details p {
+    margin: 5px 0;
+}
+
+/* Social Media Icons */
+.bio-socials {
+    margin: 20px 0;
+}
+
+.bio-socials span {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.bio-socials a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.bio-socials img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Buttons */
+.bio-buttons {
+    margin-top: 20px;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hire-me {
+    background-color: var(--primary-teal-color) ;
+    color: white;
+}
+
+.download-cv {
+    background-color: mediumseagreen;
+    color: white;
+}
 /* Featured Skills Section */
+.featured-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Image Container */
+  .image-container {
+    flex: 1;
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Skills Description */
+  .skills-description {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-description h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .skills-description p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Skills Category Title */
+  .skills-category {
+    margin: 20px 0;
+  }
+  
+  .category-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Horizontal Line for Categories (Skill Level) */
+  .category-line {
+    height: 8px;
+    border-radius: 4px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Beginner Level */
+  .beginner {
+    width: 30%; /* 30% for beginner level */
+    background-color: #e74c3c;
+  }
+  
+  /* Intermediate Level */
+  .intermediate {
+    width: 60%; /* 60% for intermediate level */
+    background-color: #f39c12;
+  }
+  
+  /* Advanced Level */
+  .advanced {
+    width: 90%; /* 90% for advanced level */
+    background-color: #2ecc71;
+  }
+  
+  /* Expert Level */
+  .expert {
+    width: 100%; /* Full width for expert level */
+    background-color: #05806a;
+  }
+  
+  /* New Skills Section */
+  .new-skills {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-skills-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .skill-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    color: #555;
+  }
 
-/* Success Work Section */
+  /* Stats Section */
+.stats {
+    margin-top: 40px;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+
 
 /* Style for the success section */
 .success{
@@ -135,16 +400,6 @@
 }
 
 
-/* ===================Media Queries for Responsiveness===================== */
-
-/* Header (Hero Section) */
-
-/* My Biography Section */
-
-/* What I Do For You Section */
-
-/* Featured Skills Section */
-
 /* Success Work Section */
 /* For tablets (768px and below) */
 @media screen and (max-width: 768px) {
@@ -245,3 +500,20 @@
     }
     
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .bio-image {
+        width: 100%; 
+    }
+}
+
+
+
+
