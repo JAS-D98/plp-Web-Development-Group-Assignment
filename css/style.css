@@ -4,7 +4,7 @@
     --primary-white-color: #fff;
     --primary-grey-color: #4f4e52;
     --primary-dark-grey-color: #2c3e50;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Poppins', sans-serif;
     --font-size-base: 16px;
     --font-size-large: 24px;
     --font-size-small: 14px;
@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    background: #ffffff;
+    background: var(--primary-white-color);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -128,6 +128,57 @@ body {
     background-color: mediumseagreen;
     color: white;
 }
+
+/* What I do section */
+.what-i-do-section{
+  text-align: center;
+}
+
+.what-i-do-section a{
+  color: var(--primary-teal-color);
+  text-decoration: none;
+}
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding:0px 6%;
+  margin: 2% 0%;
+}
+
+.card {
+  background: var(--primary-white-color);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card span {
+  font-size: 3rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
 /* Featured Skills Section */
 .featured-skills {
     display: flex;
