@@ -70,7 +70,6 @@ body {
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
-
 .bio-content h1 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -80,7 +79,6 @@ body {
 .bio-content p {
     margin-bottom: 15px;
 }
-
 /* Personal Details */
 .bio-details p {
     margin: 5px 0;
@@ -110,7 +108,7 @@ body {
 .bio-buttons {
     margin-top: 20px;
 }
-
+  
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -130,18 +128,6 @@ body {
     background-color: mediumseagreen;
     color: white;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .bio-container {
-        flex-direction: column;
-    }
-
-    .bio-image {
-        width: 100%; 
-    }
-}
-
 /* Featured Skills Section */
 .featured-skills {
     display: flex;
@@ -304,5 +290,230 @@ body {
     font-size: 1rem;
     color: #555;
   }
+
+
+/* Style for the success section */
+.success{
+    padding: 40px 200px;
+    background-color:#E0E0E0;
+    text-align: center;
+    margin:0px 80px;
+}
+/* Style for the heading */
+.success .s-container .success-heading h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:var(--primary-grey-color) ;
+}
+/* Container for the images */
+.success .s-container .success-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between images */
+    justify-items: center;  
+}
+/* Style for each image container */
+.success .s-container .success-content .s-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer{
+    background-color:var(--primary-white-color);
+    text-align: center;
+    margin:0px 80px;
+    color:var(--primary-white-color);
+}
+.footer .f-container .f-content1{
+    background-color: var(--primary-teal-color);
+    height: 17vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px;
+    justify-items: center;
+    padding:20px 110px;
+    font-size: small;
+    margin-bottom: 60px;
+}
+.footer .f-container .f-content2{
+    background-color:#01172d;
+    height:30vh ;
+}
+.footer .f-container .f-content2 .f-branding{
+    font-size:x-large;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color:var(--primary-white-color) ;
+} 
+.footer .f-container .f-content2 .contact{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 0px;
+    justify-items: center;
+    padding: 10px 275px;
+    font-size:smaller;
+}
+.footer .f-container .f-content2 .contact .f-image{
+    display: flex;
+    align-items: center;
+}
+.footer .f-container .f-content2 .contact .f-image img{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.footer .f-container .f-content3{
+    background-color: #011223;
+    height: 15vh;
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap:0px;
+    justify-items: center;
+    font-size: smaller;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+}
+.footer .f-container .f-content3 .f-rights p{
+    display: flex;
+    align-items: center;
+}
+.footer .f-container .f-content3 .f-rights img{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.footer .f-container .f-content3 .social-apps{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:40px;
+    justify-items: center;
+}
+
+.footer .f-container .f-content3 .social-apps .sa-image img{
+    border-radius: 50%;
+    border: 4px solid #01172d;
+}
+
+
+/* Success Work Section */
+/* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .success {
+      padding: 40px 40px;
+      margin: 0px 80px;
+    }
   
+    .success .s-container .success-content {
+      display: grid;  
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      justify-items: center;
+    }
+    
+  }
+  
+  /* For small devices (500px and below) */
+  @media screen and (max-width: 500px) {
+    .success {
+      padding: 30px 20px;
+      margin: 0px 80px;
+    }
+  
+    .success .s-container .success-heading h2 {
+      font-size: 1.5rem;
+    }
+  
+    .success .s-container .success-content {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column */
+      justify-items: center;
+    }
+
+    .footer .f-container .f-content1{
+        display: grid;
+        grid-template-columns:1fr ;
+        justify-items: center;
+    }
+  }
+  
+
+/* Footer Section */
+/* For tablets (768px and below) */
+@media screen and (max-width: 960px) {
+    .footer .f-container .f-content1{
+        display: grid;
+        grid-template-columns: 1fr; /* Single column*/
+        height: 60vh; 
+        justify-items: center;
+    }
+
+    .footer .f-container .f-content2{
+        height: 60vh;
+    }
+    .footer .f-container .f-content2 .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        justify-items: center;
+       padding-left: 50px;
+       padding-right: 50px;
+       
+    }
+    .footer .f-container .f-content3{
+        height:20vh ;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+  /* For small devices (500px and below) */
+@media screen and (max-width: 500px) {
+    .footer .f-container .f-content1{
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        justify-items: center;
+        height: 80vh; 
+    }  
+    .footer .f-container .f-content2{
+        height: 60vh;
+    }
+    .footer .f-container .f-content2 .contact{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        justify-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer .f-container .f-content3{
+        height:20vh ;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .bio-image {
+        width: 100%; 
+    }
+}
+
+
+
 
