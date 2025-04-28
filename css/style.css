@@ -39,6 +39,102 @@ body {
   background-size: cover;
   background-position: center;
 }
+.hero-container {
+  padding: 0% 6%;
+}
+
+.hero-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-container .hero-container-career {
+  font-size: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--primary-white-color);
+  font-weight: 700;
+}
+
+.hero-container p {
+  max-width: 60%;
+  margin: 2% 0%;
+}
+
+.hero-container button {
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 25px;
+  color: var(--primary-white-color);
+  border: 1px solid var(--primary-white-color);
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-container button:first-of-type {
+  background: var(--primary-teal-color);
+  color: var(--primary-white-color); 
+  border: none;
+}
+
+.hero-container button:hover {
+  background: var(--primary-white-color);
+  color: var(--primary-teal-color);
+}
+
+.hero-container-career {
+  font-size: 4rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 700;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 5%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-container .hero-container-career {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.8px #fff;
+  }
+
+  .hero-container p {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-container button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-container button {
+    width: 100%;
+    display: block;
+  }
+}
+
 
 /* Navbar styling */
 .navbar {
